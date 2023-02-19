@@ -1,4 +1,6 @@
 h1 {
   color: aqua;
 }
-background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+.conteiner {
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
