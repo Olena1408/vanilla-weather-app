@@ -18,8 +18,86 @@
   </head>
   <body>
     <div class="conteiner">
-      <h1>Hello World</h1>
-      <a href="" class="btn btn-primary">click me</a>
+      <div class="weather-app">
+        <div class="row">
+          <div class="col-4">
+            <img src="images/logo.png" alt="" class="logo" />
+          </div>
+          <div class="col-8">
+            <form class="example" id="signup-form">
+              <div class="row">
+                <div class="col-6">
+                  <input
+                    type="search"
+                    id="city-input"
+                    placeholder="Enter your city "
+                    autofocus="on"
+                    autocomplete="off"
+                    class="form-control shadow-sm"
+                  />
+                </div>
+                <div class="col-3">
+                  <input
+                    type="submit"
+                    value="Search"
+                    class="form-control btn btn-primary shadow-sm w-100"
+                  />
+                </div>
+                <div class="col-3">
+                  <button id="current-input" class="btn btn-success w-100">
+                    Current
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-8">
+          <h6 class="weather" id="special">
+            Weather in <strong></strong><br />
+          </h6>
+          <p class="today" id="Today"></p>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <img
+              src="https://sinst.fwdcdn.com/img/weatherImg/b/n400.jpg"
+              alt="..."
+            />
+          </div>
+          <div class="col-3">
+            <h3 id="temper">-3</h3>
+            <p class="units">
+              <a href="#" id="celsius-link">°C</a> |
+              <a href="#" id="fahrenheit-link"> °F</a>
+            </p>
+          </div>
+          <div class="col-5">
+            <div class="row">
+              <div class="col-5">
+                <p>Humidity:</p>
+                <p>Wind</p>
+                <p id="description"></p>
+              </div>
+
+              <div class="col-5">
+                <p><span id="humidity"></span>%</p>
+                <p><span id="wind"></span> m/s</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <small>
+          <a
+            href="https://github.com/Olena1408/vanilla-weather-app"
+            target="_blank"
+          >
+            <img src="./images/gitHub-logo.png" width="30px" /> Open-source
+            code</a
+          >
+          by Olena Sytnyk
+        </small>
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>

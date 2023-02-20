@@ -1,6 +1,28 @@
-h1 {
-  color: aqua;
-}
 .conteiner {
   background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+body {
+  font-family: sans-serif;
+}
+.weather-app {
+  border: 1px solid #dadde1;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 700px;
+  background-color: white;
+}
+.logo {
+  display: block;
+  width: 200px;
+  margin: 20px auto 10px;
+}
+.col-2 {
+  margin: 0px -10px;
+}
+.example {
+  margin: 25px 50px 25px 0px;
+}
+.weather {
+  margin: 5px 10px 10px 10px;
 }
