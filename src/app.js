@@ -1,7 +1,7 @@
 function showWeatherCondition(response) {
-  document.querySelector(
-    "#special"
-  ).innerHTML = `Weather in <strong>${response.data.name}</strong>`;
+  console.log(response.data);
+  let iconElement = document.querySelector("#icon");
+  document.querySelector("#special").innerHTML = `${response.data.name}`;
   document.querySelector("#temper").innerHTML = Math.round(
     response.data.main.temp
   );
@@ -12,6 +12,10 @@ function showWeatherCondition(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/04n@2x.png`
+  );
 }
 
 function searchCity(city) {
