@@ -14,8 +14,9 @@ function showWeatherCondition(response) {
     response.data.weather[0].main;
   iconElement.setAttribute(
     "src",
-    `https://openweathermap.org/img/wn/04n@2x.png`
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function searchCity(city) {
