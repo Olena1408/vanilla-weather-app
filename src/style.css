@@ -4,10 +4,14 @@ body {
   font-family: sans-serif;
   background: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
+.weather-app-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
 .weather-app {
   border: 1px solid #dadde1;
   padding: 15px;
-  margin: 20px auto;
+  margin: 30px auto;
   border-radius: 10px;
   max-width: 700px;
   background-color: white;
@@ -69,7 +73,7 @@ small {
 h3 {
   margin-top: 20px;
 }
-.col-5 {
+#WeatherCondition {
   margin-top: 12px;
 }
 h1 {
@@ -77,4 +81,18 @@ h1 {
 }
 .bigIcon {
   margin-left: 20px;
+}
+.units .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.units .active:hover {
+  text-decoration: none;
+}
+#temper {
+  color: rgb(8, 199, 183);
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 300;
 }
