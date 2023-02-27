@@ -38,7 +38,7 @@ body {
 }
 
 .weather-forecast-temperatures-min {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: lighter;
 }
 .units {
@@ -54,9 +54,7 @@ body {
 
   text-align: center;
 }
-.by {
-  margin: 2px 10px 0 -40px;
-}
+
 small {
   color: rgba(0, 0, 0, 0.687);
 }
@@ -94,6 +92,6 @@ h2 {
 .weather-forecast-temperatures-max {
   color: rgb(8, 199, 183);
 }
-#week {
-  margin-left: 20px;
+.weather-forecast {
+  margin-left: 30px;
 }
