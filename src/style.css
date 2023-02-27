@@ -37,7 +37,7 @@ body {
   text-align: center;
 }
 
-.night-temp {
+.weather-forecast-temperatures-min {
   font-size: 16px;
   font-weight: lighter;
 }
@@ -91,7 +91,7 @@ h2 {
   margin: 10px 25px 10px 25px;
   font-size: 20px;
 }
-.card-text {
+.weather-forecast-temperatures-max {
   color: rgb(8, 199, 183);
 }
 #week {
