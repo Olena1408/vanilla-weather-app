@@ -93,8 +93,10 @@ function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row id="week">`;
   let days = ["Sun", "Mon", "Tue", "Wed"];
-  days.forEach(function(day){
-    forecastHTML = forecastHTML + `
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
   <div class="col-1">
     <div class="weather-forecast-date">${day}</div>
     <img
@@ -113,9 +115,6 @@ function displayForecast() {
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
-
-
-
 
 function showFahrenheitTemperature(event) {
   event.preventDefault();
