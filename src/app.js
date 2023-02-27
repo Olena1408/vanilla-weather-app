@@ -89,6 +89,34 @@ if (minutes < 10) {
 }
 p.innerHTML = `${currentDay}, ${month} ${date}, ${hours}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row id="week">`;
+  let days = ["Sun", "Mon", "Tue", "Wed"];
+  days.forEach(function(day){
+    forecastHTML = forecastHTML + `
+  <div class="col-1">
+    <div class="weather-forecast-date">${day}</div>
+    <img
+      src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/snow-day.png"
+      alt=""
+      width="36"
+    />
+    <div class="weather-forecast-temperatures">
+      <span class="weather-forecast-temperatures-max">-3°</span>
+      <span class="weather-forecast-temperatures-min">-6°</span>
+    </div>
+  </div>
+`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+
+
+
 function showFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temper");
