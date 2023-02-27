@@ -92,24 +92,24 @@ if (minutes < 10) {
 p.innerHTML = `${currentDay}, ${month} ${date}, ${hours}:${minutes}`;
 
 function displayForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row id="week">`;
-  let days = ["Sun", "Mon", "Tue", "Wed"];
-  days.forEach(function (day) {
+
+  forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `
   <div class="col-1">
-    <div class="weather-forecast-date">${day}</div>
+    <div class="weather-forecast-date">${forecastDay.dt}</div>
     <img
-      src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/snow-day.png"
+      src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${forecastDay.condition.icon}.png" 
       alt=""
       width="36"
     />
     <div class="weather-forecast-temperatures">
-      <span class="weather-forecast-temperatures-max">-3°</span>
-      <span class="weather-forecast-temperatures-min">-6°</span>
+      <span class="weather-forecast-temperatures-max">${forecastDay.temp.max}°</span>
+      <span class="weather-forecast-temperatures-min">${forecastDay.temp.min}°</span>
     </div>
   </div>
 `;
